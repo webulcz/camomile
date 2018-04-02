@@ -1,0 +1,38 @@
+.bg-middle {
+    background-color: $middleBlue;
+}
+.bg-main {
+    background-color: $mainBlue;
+}
+.bg-orange {
+    background-color: $mainOrange !important;
+}
+.bg100vh {
+    min-height: 100vh;
+}
+
+.bg-dark {
+
+    &--down-right { 
+        padding: 0; 
+        background-color: $darkBlue; 
+    }
+
+    &--up-right { padding: 0; background-color: $darkerBlue; }
+    
+
+    @include atLarge {
+        &--down-right {
+            min-height: 100vh; 
+            transform-origin: top left;
+            transform: skewX(15deg) translateX(-10%) scaleX(5);
+        } 
+        
+        &--up-right {
+            min-height: 100vh; transform-origin: top left; 
+            transform: skewX(-9deg) translateX(38.5%) scaleX(5);
+        }  
+        
+    }    
+
+}

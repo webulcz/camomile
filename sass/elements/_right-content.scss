@@ -1,0 +1,34 @@
+.right-content {
+
+    &--middle {
+        background-color: $middleBlue;
+        padding: 0 2rem; 
+
+        @include atLarge {
+            background-color: $mainBlue;
+            min-height: 100vh; 
+            display: flex; 
+            align-items: center; 
+            padding: 0 2rem; 
+            line-height: 160%;
+        }
+
+        @include atSubLarge {
+            padding: 0 4.5rem; 
+        }
+    }
+
+    &--bottom {
+        padding-left: 2rem;
+        line-height: 200%;
+        font-size: 0.8rem;
+
+        @include atSmall {
+            font-size: inherit;
+            padding-left: inherit;
+            line-height: 250%;
+        }
+    }
+
+
+}

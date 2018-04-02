@@ -1,0 +1,25 @@
+.logo-box {
+    box-sizing: initial; 
+    text-align: center;
+    
+    img {
+        max-width: 80%; 
+        margin: 0 auto;
+        @include atLarge {
+            max-width: inherit;
+        }
+    }
+    
+    @include atSmall {
+        transform:  translateX(-2.5rem);
+    }
+
+    @include atMedium {
+        width: 200px; 
+    }
+
+    @include atLarge {
+        width: 90%; 
+        padding-top: 3rem;
+    }
+}

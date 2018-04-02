@@ -1,0 +1,16 @@
+.sub-title {
+    font-size: 1.25rem; 
+    font-weight: 100; 
+    font-style: italic; 
+    line-height: 170%;
+    padding: 0 0 3rem 0;
+    
+    @include atSmall {
+        font-size: 1.75rem; 
+    }
+
+    @include atLarge {
+       padding: 4rem 3rem 0 3rem;
+    }
+
+}

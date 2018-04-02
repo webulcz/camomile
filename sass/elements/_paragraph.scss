@@ -1,0 +1,8 @@
+.paragraph {
+    padding: 2.5rem 0; line-height: 170%; 
+    &--no-top {
+        padding-top: 0;
+        @include atSubLarge {padding-top: 2rem;}           
+    }
+     
+}

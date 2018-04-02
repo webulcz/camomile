@@ -1,0 +1,37 @@
+#home {
+    font-size: 0.5rem;
+    background: linear-gradient(to right, $middleBlue 50%, $mainBlue 50%);
+    
+    .bg-middle {min-height: 100vh;}
+    .bg-middle, .bg-main {padding: 2em 0;}
+
+    @include atMedium {
+        font-size: 0.8rem;
+        .bg-middle, .bg-main {min-height: 100vh;}
+    }
+
+    @include atLarge {
+        .bg-middle img {
+            -ms-transform: scale(1.2, 1.2); /* IE 9 */
+            -webkit-transform: scale(1.2, 1.2); /* Safari */
+            transform: scale(1.2, 1.2);
+        }
+    }
+
+    @include atExtraLarge {
+        .bg-middle img {
+            -ms-transform: scale(1.6, 1.6); /* IE 9 */
+            -webkit-transform: scale(1.6, 1.6); /* Safari */
+            transform: scale(1.6, 1.6);
+        }
+    }
+
+
+    .bg-main {
+        background-image: url('images/pureflower.svg');
+        background-position: center center;
+        background-repeat:  no-repeat;
+        background-size: 85%;
+    }
+
+}

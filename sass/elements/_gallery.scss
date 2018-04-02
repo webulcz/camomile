@@ -1,0 +1,19 @@
+.bb-gallery {
+
+    &.row {
+        padding-bottom: 4rem;
+
+        > div {
+            padding: 1px !important;
+        }
+    }
+
+    img {
+        // padding: .25rem;
+        // border: 1px solid $middleBlue;
+        border-radius: .25rem;
+        transition: all .2s ease-in-out;
+        width: 100%;
+        height: auto;
+    }
+}

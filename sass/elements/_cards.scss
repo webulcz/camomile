@@ -1,0 +1,9 @@
+.orange-card {
+    background-color: $mainOrange; 
+    padding: 1rem; 
+    line-height: 170%; 
+
+    @include atSmall { 
+        padding: 2.5rem;
+    }
+}

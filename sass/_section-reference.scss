@@ -1,0 +1,40 @@
+#reference {
+    background-color: $middleBlue;
+    position: relative;
+    overflow-x: hidden;
+
+    @include atLarge{
+        background: linear-gradient(to right, $middleBlue 80%, $mainBlue 80%);
+
+        .left-content {
+            &::before {
+                content: "";
+                transform: translateX(-10%);
+                position: absolute; width: 100%; height: 100%;
+                background: url('images/pureflower.svg') no-repeat center center;
+                opacity: 0.1;
+            }
+        }
+    }
+
+    @include atSupLarge {
+        font-size: 20px;
+        .bg-main {
+            padding: 0 8rem;
+            h3 {padding: 4rem 4rem 0 4rem;}
+        }
+
+        .left-content {
+            &::before {
+                transform: translateX(-14%); 
+            }
+        }
+    }
+
+    @include atExtraLarge{
+
+        background: linear-gradient(to right, $middleBlue 70%, $mainBlue 70%);
+        .bg-main {align-items: baseline; padding: 25vh 5rem 0 5rem;}
+    }
+    
+}

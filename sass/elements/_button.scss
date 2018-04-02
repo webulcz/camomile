@@ -1,0 +1,29 @@
+.button {
+    padding: 1rem 2rem; font-size: 0.8rem; font-weight: bold; color: #fff; background-color: $darkerBlue; 
+    text-decoration:none; display: inline-block;
+    &:hover {
+        text-decoration: none;
+        color: #fff;
+    }
+
+    @include atLarge {
+        padding: 1rem 4rem; font-size: 1rem;
+    }
+
+    &-default {
+        background-color: $mainOrange;
+        &.button--large-top-offset {margin-top: 1rem;}
+        &:hover {background-color: $darkBlue;}
+    
+        @include atMedium {
+            &.button--large-top-offset {margin-top: 2rem;}
+        }
+    
+        @include atLarge {
+            &.button--large-top-offset {margin-top: 4rem;}
+        }
+    }
+
+}
+
+

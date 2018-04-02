@@ -1,0 +1,51 @@
+.service-box {
+    box-sizing: initial;  
+    text-align:center;
+    width: 100%;
+    font-size: 0.75em;
+    padding-bottom: 1rem;
+    
+    &-pic {
+        width: 80px; margin: 0 auto;
+        display: flex;
+        
+        img {width: 100%; height: auto;}
+    }
+
+    .service-box-title {
+        background: $blackBlue; 
+        width: 100px; 
+        padding: 0.5em 0;
+        transform: skewX(20deg); font-size: 1em;
+        margin: 0 auto;
+        margin-top: 0.8em;
+       
+        em {font-style: normal; transform: skewX(-20deg); display: block;}        
+        
+        @include atSmall {
+            margin-top: 1.25rem;
+            width: 150px;
+            transform: skewX(20deg) ;
+        }
+    }
+
+    @include atSmall {
+        padding: 2em 1.5em 2em 1.5em; 
+        width: 180px; 
+        font-size: 1em;
+
+        &-pic {
+            display: block; width: auto;
+            img {width: inherit;}
+        }
+    }
+
+    @include atMedium {
+        transform: translateX(-2.5em);
+    }
+
+    @include atSubLarge {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }        
+}

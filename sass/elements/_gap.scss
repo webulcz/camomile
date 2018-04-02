@@ -1,0 +1,40 @@
+.gap {
+    display: block; 
+    &--fixed {
+        padding-top: 1rem;
+    }
+    
+    @include atSmall {
+        &--fixed {
+            padding-top: 3rem;
+        }
+    }
+
+    @include atMedium {
+        padding-top: 4rem;
+        &--fixed {
+            padding-top: 14rem;
+        }
+    }
+
+    @include atLarge {
+        padding-top: 7rem;
+        &--fixed {
+            padding-top: 15rem;
+        }
+    }
+
+    @include atSubLarge {
+        &--fixed {
+            padding-top: 20rem;
+        }
+    }
+
+    @include atSupLarge {
+        padding-top: 12rem;
+        &--fixed {
+            padding-top: 25rem;
+        }
+    }
+
+}

@@ -1,0 +1,21 @@
+.section-title {
+    padding: 2rem 0 1rem 0; 
+    margin: 0; 
+    font-size: 2rem;
+    
+    @include atSmall {
+        padding-top: 3rem; 
+    }
+
+    @include atMedium {
+        padding-top: 4rem; 
+    }
+
+    @include atSubLarge {
+        padding-bottom: 2rem;
+    }
+
+    @include atMedium {
+        font-size: 3rem;
+    }
+}
