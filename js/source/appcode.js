@@ -165,6 +165,7 @@
     var waypoint_about = new Waypoint({
       element: document.querySelector("#contact"),
       handler: function(direction) {
+
           if (direction == "down") { 
             $("#nav-icon2").removeClass("fadeIn");
             $("#nav-icon2").addClass("fadeOut"); 

@@ -16,4 +16,10 @@
         width: 100%;
         height: auto;
     }
+
+    .responsive-pic {
+        display: inline-block;
+        min-width: 120px;
+        min-height: 100px;
+    }
 }
