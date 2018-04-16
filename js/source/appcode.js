@@ -161,7 +161,7 @@
       offset: "15%"
     });
 
-    // ============== Waypoint CONTECT 15 ==============
+    // ============== Waypoint CONTACT 15 ==============
     var waypoint_about = new Waypoint({
       element: document.querySelector("#contact"),
       handler: function(direction) {
@@ -196,5 +196,16 @@ baguetteBox.run(".bb-gallery", {
       return element.getElementsByTagName('img')[0].alt;
   }
 });
+
+
+// ============== Google analytics ==============
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  
+  ga('create', 'UA-5741687-27', 'auto');
+  ga('send', 'pageview');
+  
 
 //]]>

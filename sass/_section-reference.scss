@@ -17,6 +17,10 @@
         }
     }
 
+    @include atSubLarge {
+        font-size: 1.2rem;
+    }
+
     @include atSupLarge {
         font-size: 20px;
         .bg-main {

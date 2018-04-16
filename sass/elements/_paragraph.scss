@@ -4,5 +4,10 @@
         padding-top: 0;
         @include atSubLarge {padding-top: 2rem;}           
     }
+
+    &--padding-right {
+        padding-right: 0;
+        @include atSmall {padding-right: 12%;}       
+    }
      
 }

@@ -33,6 +33,7 @@ gulp.task('jsmin', function (cb) {
 // =================== DEFAULT TASK ===================
 gulp.task('default', function () {
   gulp.watch('./sass/**/*.scss', ['sass']);
+  gulp.watch('./css/source/**/*.css', ['cssmin']);
   gulp.watch('./js/source/**/*.js', ['jsmin']);
 });
 // ====================================================
